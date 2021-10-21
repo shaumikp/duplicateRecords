@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Webpage" icon-name="custom:custom14">
+      <div class="slds-m-around_medium">
+        <lightning-input type="text" onchange={handleFirstNameChange} data-field="firstname" value={contactRecord.FirstName} label="First Name: "></lightning-input>
+        <lightning-input type="text" name="LastName" onchange={handleLastNameChange} data-field="lastname" value={contactRecord.LastName} label="Last Name: "></lightning-input>
+        <lightning-input type="text" name="Email" onchange={handleEmailChange} data-field="email" label="Email: " value={contactRecord.Email}></lightning-input>
+        <lightning-button variant="brand-outline" label="Create" title="Primary action with lighter look" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+      </div>
+    </lightning-card>
+  </template>

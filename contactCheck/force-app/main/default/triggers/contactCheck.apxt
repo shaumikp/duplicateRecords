@@ -1,0 +1,6 @@
+trigger contactCheck on Contact (before insert, before update) {
+	
+    for (Contact c: Trigger.New) {
+        
+    }
+}
